@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Enigma Alvinegro (com um toque verde! 😉)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-led-container">
+            <div class="logo-corinthians"></div>
+        </div>
+        <h1>Desvende o Enigma Alvinegro... Se conseguir, Fiel!</h1>
+        <p>Meu amor, para acessar o nosso santuário digital, você precisará provar sua paixão e inteligência. Mas prepare-se, pois aqui a verdade dói um pouco! Decifre os quatro enigmas a seguir. Cada resposta correta revelará uma pista para o código secreto.</p>
+
+        <div id="enigma1" class="enigma-part">
+            <h2>Primeira Conquista (Com ou Sem Fax?)</h2>
+            <p>Em que ano o Corinthians "conquistou" seu primeiro Mundial, um título que até hoje é motivo de discussões acaloradas entre os rivais? (Ah, o nosso Mundial é sem discussão, tá? 😉)</p>
+            <input type="text" id="answer1" class="answer-input" placeholder="Sua resposta">
+            <button class="check-button" onclick="checkAnswer(1, '2000')">Verificar</button>
+            <p id="feedback1" class="hidden"></p>
+            <p id="clue1" class="hidden">Pista para o 1º dígito: Quantas vezes o Corinthians já foi rebaixado para a Série B do Brasileirão?</p>
+        </div>
+
+        <div id="enigma2" class="enigma-part hidden">
+            <h2>O Craque do "Faz-me-rir"</h2>
+            <p>Qual o número da camisa do nosso eterno craque Endrick, que fez a Fiel sonhar com o futuro? (E que eles nunca terão! Haha!)</p>
+            <input type="number" id="answer2" class="answer-input" placeholder="Sua resposta">
+            <button class="check-button" onclick="checkAnswer(2, '9')">Verificar</button>
+            <p id="feedback2" class="hidden"></p>
+            <p id="clue2" class="hidden">Pista para o 2º dígito: Qual é o último dígito do ano em que o Palmeiras conquistou sua primeira Libertadores?</p>
+        </div>
+
+        <div id="enigma3" class="enigma-part hidden">
+            <h2>A Arena (Onde o Choro é Livre!)</h2>
+            <p>Em que ano a Fiel torcida viu o "sonho" da casa própria alvinegra se tornar realidade, com a inauguração da sua majestosa arena? (E que continua rendendo memes sobre a dívida!)</p>
+            <input type="text" id="answer3" class="answer-input" placeholder="Sua resposta">
+            <button class="check-button" onclick="checkAnswer(3, '2014')">Verificar</button>
+            <p id="feedback3" class="hidden"></p>
+            <p id="clue3" class="hidden">Pista para o 3º dígito: Quantas Libertadores o Corinthians tem a mais que o Palmeiras?</p>
+        </div>
+
+        <div id="enigma4" class="enigma-part hidden">
+            <h2>O Mundial (De 2012 e a Dúvida Eterna!)</h2>
+            <p>Em qual ano o Corinthians conquistou seu segundo título mundial, selando sua hegemonia... para o jornal da Fiel, claro! (Aqui a gente sabe qual é o verdadeiro Bi! 😉)</p>
+            <input type="text" id="answer4" class="answer-input" placeholder="Sua resposta">
+            <button class="check-button" onclick="checkAnswer(4, '2012')">Verificar</button>
+            <p id="feedback4" class="hidden"></p>
+            <p id="clue4" class="hidden">Pista para o 4º dígito: Qual o número de Libertadores que o Corinthians conquistou ANTES de ter um estádio próprio?</p>
+        </div>
+
+        <div id="final-message" class="hidden">
+            Parabéns, Fiel! Você desvendou os enigmas, mesmo com as provocações! Junte as pistas para formar o código de acesso ao nosso santuário digital:
+            <p id="final-clues"></p>
+            <p>Dica final: Use esses dígitos na tela de bloqueio do nosso site especial. E não se esqueça: o nosso amor é Bi-Mundial de verdade e com Libertadores de sobra! 😉</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
